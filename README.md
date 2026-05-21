@@ -1,6 +1,8 @@
 # Hi there 👋
 
-I'm **Shogo Tsuneto**, a software engineer interested in **modern microservices architecture**, **schema-first development**, and building clean, minimal, and extensible tools across the stack.
+I'm **Shogo Tsuneto**, a generalist full-stack engineer interested in **modern microservices architecture** and building clean, minimal, and extensible tools across the stack — from frontend to infrastructure.
+
+I hold the **AWS Certified DevOps Engineer – Professional** certification, and I've passed Japan's IPA **Network Specialist** and **Database Specialist** exams — backing a breadth that spans application development, networking, databases, and operations.
 
 ## 🦀 Rust & WebAssembly
 
