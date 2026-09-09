@@ -4,6 +4,16 @@ I'm **Shogo Tsuneto**, a generalist full-stack engineer interested in **modern m
 
 I hold the **AWS Certified DevOps Engineer – Professional** certification, and I've passed Japan's IPA **Network Specialist** and **Database Specialist** exams — backing a breadth that spans application development, networking, databases, and operations.
 
+## 🐙 Heptapedal — an app, and the platform that runs it
+
+A personal knowledge base of prepared answers to frequently-asked questions, built for **job-interview preparation** and **spoken language-test practice** (IELTS, TOEFL). MCP-first: an LLM client searches your prompts and stories by topic or semantic similarity, then uses them to coach, drill, or grade you — the browser UI is a viewer over the same data. Running at **[heptapedal.com](https://heptapedal.com)**.
+
+### [heptapedal-infra](https://github.com/shogotsuneto/heptapedal-infra)
+The infrastructure and delivery behind it. Managed Kubernetes on DigitalOcean, described in OpenTofu (plain Terraform HCL) and delivered by Argo CD app-of-apps GitOps: Gateway API ingress, cert-manager DNS-01 wildcard TLS, Sealed Secrets, managed Postgres with pgvector, and Grafana Cloud telemetry with an external probe. Sized to run for well under $100/month, with every trade-off written down as an ADR rather than implied.
+
+### heptapedal *(private)*
+The application itself, in Rust. One `axum` process serves three surfaces — an MCP server, an HTTP API, and a Leptos full-stack web UI — layered over a shared core and split across workspace crates so a surface can be pulled out later along a seam that already exists. Postgres + pgvector holds per-entity embeddings for similarity search; Supabase backs web login, and personal access tokens authenticate MCP clients.
+
 ## 🦀 Rust & WebAssembly
 
 Exploring modern frontend development with Rust:
