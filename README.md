@@ -18,8 +18,11 @@ The application itself, in Rust. One `axum` process serves both surfaces — an 
 
 Exploring modern frontend development with Rust:
 
+### [repeat-sentence](https://github.com/shogotsuneto/repeat-sentence)
+A browser app for practising the **Repeat Sentence** task of PTE Core, built with [Leptos](https://leptos.dev/) (CSR) and WebAssembly. Mirrors the exam flow — a sentence is read aloud, a beep, then recording that stops on a time limit or silence — with random voice and speaking-rate presets across English accents. Optional **on-device neural TTS** (Kokoro-82M via WebGPU, with a CPU fallback) for browsers whose built-in voices are poor. Attempts and recordings stay on the device in IndexedDB; nothing is uploaded. Browser tests run in headless Chromium with Playwright, with speech synthesis and the microphone replaced by deterministic fakes. **[Live app →](https://shogotsuneto.github.io/repeat-sentence/)**
+
 ### [pomodoro-leptos-csr](https://github.com/shogotsuneto/pomodoro-leptos-csr)
-A Pomodoro timer that runs entirely in the browser, built with the [Leptos](https://leptos.dev/) framework (client-side rendering) and compiled to WebAssembly. Features work/break cycles with auto-start, configurable durations, task attribution, session history, and in-flight session persistence via IndexedDB. Built and deployed to GitHub Pages with Trunk. **[Live app →](https://shogotsuneto.github.io/pomodoro-leptos-csr/)**
+A Pomodoro timer that runs entirely in the browser, built with the Leptos framework (client-side rendering) and compiled to WebAssembly. Features work/break cycles with auto-start, configurable durations, task attribution, session history, and in-flight session persistence via IndexedDB. Built and deployed to GitHub Pages with Trunk. **[Live app →](https://shogotsuneto.github.io/pomodoro-leptos-csr/)**
 
 ## 🔐 Authentication & API Tooling
 
